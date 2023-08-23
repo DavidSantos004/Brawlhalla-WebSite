@@ -137,13 +137,12 @@ main{
 }
 
 #tittle_bienvenida{
-    margin-right: 10%;
+    position: absolute;
     font-weight: bolder;
     font-size: 50px;
     color: teal;
-    width: initial;
-    overflow: auto;
-    
+    padding-top: 3%;
+    padding-left: 5%;
 }
 .contenido_pagina{
     display: contents;
@@ -175,10 +174,47 @@ main{
     
 }
 
+.leyendas{
+    display: contents;
+}
+
+.leyendas h1{
+     text-align: center;
+     padding-top: 50px;
+     font-size: 30px;
+}
+
+.contenedor_personaje{
+    display: flex;
+    text-align: center;
+    margin: 5%;
+    padding: 1%;
+    align-content: center;
+    width: fit-content;
+    background-color: rgb(201, 192, 192);
+}
+
+.leyendas img{
+    height: 200px;
+}
+
+.leyendas h3{
+    text-align: center;
+}
+
+.leyendas p{
+    padding: 2%;
+}
+
+.contenedor_personaje:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2) rotate(0deg);
+}
+
 #footer_img{
     position: relative;
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 31%;
     align-items: center;
     width: 600px;
 }
