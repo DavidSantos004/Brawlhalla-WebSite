@@ -206,6 +206,28 @@ main{
     padding: 2%;
 }
 
+.contenedor_personaje_crossover{
+    width: inherit;
+    margin: 5%;
+    padding: 1%;
+    background-color: rgb(201, 192, 192);   
+}
+
+.contenedor_personaje_crossover img{
+    margin: 1.4%;
+    height: 180px;
+}
+
+.contenedor_personaje_crossover a{
+    width: 100%;
+}
+
+
+.contenedor_personaje_crossover:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2) rotate(0deg);
+}
+
 .contenedor_personaje:hover{
     transition: ease-in-out 0.3s;
     transform: scale(1.2) rotate(0deg);
