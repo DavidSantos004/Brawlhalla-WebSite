@@ -199,12 +199,6 @@ main{
 
 }
 
-.tex_cont_juego{
-    display: grid;
-    background-color:  rgb(214, 212, 212);
-    border-radius: 3%;
-}
-
 .cont_rango p{
     display: flex;
     margin-top: 9%;
