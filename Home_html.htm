@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    <title>Brawlhalla-WebPage</title>
     <link rel="stylesheet" href="./home_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Brawlhalla-WebPage</title>
 </head>
     <header>
         <img src="https://www.brawlhalla.com/img/Logo_BrawlhallaHammer.png" alt="" class="imglogo">
-        <nav class="navegador_contenedor">
-            <ol>
-                <li><a class="apartados"  href="#juego">Juego</a></li>
-                <li><a class="apartados"  href="https://store.steampowered.com/app/291550/Brawlhalla/?l=spanish">Pase de batalla</a></li>
-                <li><a class="apartados"  href="https://www.start.gg/league/brawlhalla-esports-year-eight/details">Esport</a></li>
-                <li><a class="apartados"  href="https://theyetee.com/collections/brawlhalla">mercancia</a></li>
-                <li><a class="apartados"  href="https://www.brawlhalla.com/support">Soporte</a></li>  
-            </ol>        
-        </nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
     </header>
 
         <div class="main_logo">
@@ -68,9 +72,9 @@
                         <br>
                         <br>
                         <div class="contendor_title_bienvenida" id="juego">
-                        </div>
+                       
                         <h1 id="tittle_bienvenida" >Bienvenido A Brawlhalla</h1>
-
+                    </div>
                     <div class="contenido_main">
                         <div class="tittle_contenido">
                         </div>
@@ -83,7 +87,6 @@
                             y tambien con famosos de la vida real (Ben 10, Hora de aventura, Stiven universe, Rayman, La Roca, Jhon Sena, HellBoy, etc). </p>
                         </div>                    
                         <div class="imagen_bienvenida">
-                            <img id="imagen_bienvenida_"src="https://www.brawlhalla.com/_app/immutable/assets/arcadia.426323af.png" alt="">
                         </div>
                     </div>
                     <hr>
@@ -998,41 +1001,45 @@
                 </section>
         </main>
     
-</body>
-<footer>
-    <img id="footer_img" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Brawlhalla_Logo_100M.png" alt="">
-    
 
-        <div class="cont_footer">
+<footer>
+    
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img id="footer_img" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Brawlhalla_Logo_100M.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
             <img src="https://www.brawlhalla.com/img/Logo_BrawlhallaHammer.png" alt="" id="logo_footer">
-            <div class="info_footer">
-                    <ul>
-                        <li><a href="https://www.dropbox.com/sh/x55accwsf0e44vd/AACPBOIU3I4fxu-Hw4mx2vsDa?dl=0">Carpeta de prensa</a></li> <br>
-                        <li><a href="https://legal.ubi.com/privacypolicy/es-INTL">Política de privacidad</a></li><br>
-                        <li><a href="https://legal.ubi.com/eula/en-US">Acuerdo de licencia de usuario final</a></li><br>
-                        <li><a href="https://legal.ubi.com/DoNotSellMyPersonalInformation/en-US">No vender mi información personal</a></li><br>
-                    </ul> 
-            </div>
-            
-                <div class="logos">
-                    <div class="logos_main">
-                        <a href=""><img src="https://www.brawlhalla.com/_app/immutable/assets/georgia-peach.a02074ca.png" alt="" width="100w"></a>
+          </div>
+          <div class="col">
+            <ul>
+                <li><a href="https://www.dropbox.com/sh/x55accwsf0e44vd/AACPBOIU3I4fxu-Hw4mx2vsDa?dl=0">Carpeta de prensa</a></li> <br>
+                <li><a href="https://legal.ubi.com/privacypolicy/es-INTL">Política de privacidad</a></li><br>
+                <li><a href="https://legal.ubi.com/eula/en-US">Acuerdo de licencia de usuario final</a></li><br>
+                <li><a href="https://legal.ubi.com/DoNotSellMyPersonalInformation/en-US">No vender mi información personal</a></li><br>
+            </ul> 
+          </div>
+          <div class="col">
+            <a href=""><img src="https://www.brawlhalla.com/_app/immutable/assets/georgia-peach.a02074ca.png" alt="" width="100w"></a>
                         <a href="https://www.esrb.org/ratings-guide/"><img src="https://www.brawlhalla.com/_app/immutable/assets/esrb2.3c3f2370.png" alt="" width="100w"></a>
                         <a href="https://pegi.info/search-pegi?q=brawlhalla&op=Search&filter-age%5B%5D=&filter-descriptor%5B%5D=&filter-publisher=&filter-platform%5B%5D=&filter-release-year%5B%5D=&page=1&form_build_id=form-SuDjnW1a3QoMiNEhEpZOPGxmIXns8Cxy8WVWbl0R9R8&form_id=pegi_search_form/"><img src="https://www.brawlhalla.com/_app/immutable/assets/pegi5.8e0d7dee.png" alt="" width="60w"></a>
                         <a href="https://pegi.info/search-pegi?q=brawlhalla&op=Search&filter-age%5B%5D=&filter-descriptor%5B%5D=&filter-publisher=&filter-platform%5B%5D=&filter-release-year%5B%5D=&page=1&form_build_id=form-SuDjnW1a3QoMiNEhEpZOPGxmIXns8Cxy8WVWbl0R9R8&form_id=pegi_search_form/"><img src="https://www.brawlhalla.com/_app/immutable/assets/pegi_violence-Converted.87edf165.png" alt="" width="60w"></a>
                         <hr>
-                    </div>
-                    
-                    <div class="redes_sociales">
                         <a href="https://twitter.com/Brawlhalla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="logo_red_social"  src="https://img.icons8.com/?size=512&id=437&format=png" alt="" ></a>
                         <a href="https://www.instagram.com/brawlhalla/"><img id="logo_red_social" src="https://img.icons8.com/?size=512&id=48841&format=png" alt=""></a>
                         <a href="https://www.youtube.com/channel/UCQ5k469r1kRZ10zvyxQsFCg"><img id="logo_red_social" src="https://img.icons8.com/?size=512&id=62852&format=png" alt=""></a>
                         <a href="https://discord.com/invite/brawlhalla"><img id="logo_red_social" src="https://img.icons8.com/?size=512&id=86955&format=png" alt=""></a>
                         <a href="https://www.facebook.com/Brawlhalla/?locale=es_LA"><img id="logo_red_social" src="https://img.icons8.com/?size=512&id=84872&format=png" alt=""></a>
                         <a href="https://www.twitch.tv/brawlhalla"><img id="logo_red_social" src="https://seeklogo.com/images/T/twitch-logo-9DF07D4D2C-seeklogo.com.png  " alt=""></a>
-                    </div>
-                </div>
-            
+          </div>
         </div>
+      </div>
+
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
 </html>
