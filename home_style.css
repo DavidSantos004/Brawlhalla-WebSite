@@ -28,11 +28,8 @@ header{
     align-items: center;
 }
 
-.navegador_contenedor{
-    margin-top: 50px;
-    display: flex;
-    font-weight: bold;
-    margin: 10px;
+.nav-link{
+    color:teal
 }
 
 ul,li,a{
@@ -40,8 +37,6 @@ ul,li,a{
     text-decoration: none;
     display: inline-block;
     font-weight: bolder;
-    transition-property: all 4s;
-    
 }
 
 .apartados{
@@ -137,7 +132,8 @@ ul,li,a{
 .contendor_title_bienvenida{
     align-self: center;
     width: 50%;
-    margin-left: 7%;
+    text-align: center;
+    margin-left: 3%;
     
 }
 
@@ -147,8 +143,7 @@ ul,li,a{
     font-size: 300%;
     background-color: whitesmoke;  
     color: teal; 
-    border-radius: 3%;
-    margin-left: 16%;
+    
 }
 
 .text_contenido {
@@ -156,32 +151,36 @@ ul,li,a{
     width: 70%;
     display: flex;
     align-items: center;
+    word-wrap: break-word;
 }
 
 
 .contenido_main{
     display: flex;
-    margin: 0 100px;
     font-size: 10px;
     text-align: center;
 }
 
 .imagen_bienvenida {
-    width: 31%;
-    background-image: url("https://www.brawlhalla.com/_app/immutable/assets/arcadia.426323af.png");
-    background-size: cover;
-    background-position: 50% 0%;
 
+    width: 55%;
+    display: grid;
+    align-content: center;
+}
+.imagen_bienvenida img{
+    width: 100%;
+    
 }
 
 
 
 .contenido_main  p{
     margin: 1%;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 2;
     width: 100%;
-    max-height: 540px;
+    min-width: 69%;
+    min-height: 91%;
     
     
     
@@ -247,8 +246,7 @@ ul,li,a{
 
 .rango{
     text-align: center;
-    width: fit-content;
-    font-size: 19px;
+    width: fit-content;;
     margin: 2%;
     background-color: rgb(214, 212, 212);;
 }
@@ -285,6 +283,9 @@ h5{
     background-color: rgb(201, 192, 192);
 }
 
+.contenedor_personaje a{
+    margin-bottom: 16px;
+}
 .leyendas img{
     height: 200px;
 }
@@ -328,12 +329,10 @@ h5{
 }
 
 
-
-
 .contenedor_personaje:hover{
     
     transition: ease-in-out 0.3s;
-    transform: scale(1.2) rotate(0deg);
+    transform: scale(1.1) rotate(0deg);
 }
 
 .contenedor_personaje_crossover:hover{
@@ -342,49 +341,79 @@ h5{
 }
 
 #footer_img{
-    position: relative;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    margin: 5%;
 }
 
-.cont_footer{
-    display: -webkit-box;
-    margin-top: 4%;
-    margin-bottom: 10%;
-    margin-left: 9%;
-}
+
 
 #logo_footer{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    margin-bottom: 10%;
+
 }
 
-.info_footer{
-    display: grid;
-    align-content: center;
-    font-family: 'Itim', cursive;
-    font-size: 20px;
-}
-.contenedor_logos{
-    display: flex;
-}
-.logos{
-    display: inline;
-    margin-right: 3%;
-    margin-left: 6%;
-}
-
-.img_logos_footer{
-    margin-bottom: 14%;
-    margin-top: 10%;
-    width: 80px;   
-}
-.redes_sociales{
+.row a{
+    margin: 1%;
     display: contents;
-    width: 10%;
-    margin-left: 10%;
+}
+
+.enlaces_footer{
+    margin-left: -80px;
 }
 
 #logo_red_social{
     width: 30px;
 }
+
+/* media queris */
+
+@media (min-width: 727px) and (max-width: 950px){
+
+.cont_rango{
+    display: grid;
+    justify-items: center;
+}
+
+.cont_modo_juego img {
+    width: 80%;
+    
+}
+
+.rangos{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media (min-width: 10px) and (max-width: 726px){
+
+    .contenido_pagina{
+        display: grid;
+        justify-items: center;
+
+    }
+
+    .contenido_main{
+        display: grid;
+        justify-items: center;
+    }
+
+
+    .cont_rango{
+        display: grid;
+        justify-items: center;
+    }
+    
+    .cont_modo_juego img {
+        width: 80%;
+        
+    }
+    
+    .rangos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
