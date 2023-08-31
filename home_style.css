@@ -1,5 +1,10 @@
+
+/*IMPORTAMOS BOOSTRAP*/
+
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/*DISEÑOS GLOBALES*/
 *{
     margin:0;
     padding:0;
@@ -19,6 +24,7 @@ html{
    
 }
 
+/* CABECERA Y NAVEGADOR*/
 
 header{
     
@@ -32,6 +38,7 @@ header{
     color:teal
 }
 
+/* ESTILOS GENERALES PARA LAS LISTA Y LOS LINKS*/
 ul,li,a{
     color: rgb(90, 88, 88);
     text-decoration: none;
@@ -39,20 +46,7 @@ ul,li,a{
     font-weight: bolder;
 }
 
-.apartados{
-    margin: 20px;
-    display: inline-block;
-    font-size: 18px;
-    color: rgb(16, 124, 128);
-    text-decoration: none;
-}
-
-.apartados:hover{
-    transition: ease-in-out 0.3s;
-    transform: scale(1.2) rotate(0deg);
-    color: rgb(15, 183, 189);
-}
-
+/* ESTILOS PARA LA PARTE PRINCIPAL DE LA PAGINA*/
 .imglogo{
     height: 89px;
     margin-left: 21px;
@@ -129,6 +123,7 @@ ul,li,a{
 }
 
 
+/* ESTILOS PARA LA SECCION DE DESCRIPCCION DEL JUEGO*/
 .contendor_title_bienvenida{
     align-self: center;
     width: 50%;
@@ -150,8 +145,7 @@ ul,li,a{
     margin: 1%;
     width: 70%;
     display: flex;
-    align-items: center;
-    word-wrap: break-word;
+
 }
 
 
@@ -163,7 +157,7 @@ ul,li,a{
 
 .imagen_bienvenida {
 
-    width: 55%;
+    width: 31%;
     display: grid;
     align-content: center;
 }
@@ -172,19 +166,16 @@ ul,li,a{
     
 }
 
-
-
 .contenido_main  p{
     margin: 1%;
-    font-size: 20px;
+    font-size: initial;
     line-height: 2;
     width: 100%;
     min-width: 69%;
     min-height: 91%;
-    
-    
-    
 }
+
+/* ESTILOS PARA LAS DESCRIPCIONES DE LOS MODOS DE JUEGO */
 
 .cont_modo_juego{
     display: flex;
@@ -260,6 +251,8 @@ h5{
     background-color: rgb(214, 212, 212);
 }
     
+/* ESTILOS PARA LOS CONTENEDORES DE LOS PERSONAJES*/
+
 .leyendas{
     display: contents;
 }
@@ -335,10 +328,7 @@ h5{
     transform: scale(1.1) rotate(0deg);
 }
 
-.contenedor_personaje_crossover:hover{
-    transition: ease-in-out 0.3s;
-    transform: scale(1.2) rotate(0deg);
-}
+/* ESTILOS PARA EL FOOTER */
 
 #footer_img{
     align-items: center;
@@ -369,16 +359,24 @@ h5{
 
 /* media queris */
 
-@media (min-width: 727px) and (max-width: 950px){
+@media (min-width: 781px) and (max-width: 1257px){
 
 .cont_rango{
     display: grid;
     justify-items: center;
 }
+.text_contenido{
+    width: fit-content;
+}
+.contenido_main p{
+    width: 100%;
+}
+.imagen_bienvenida{
+    width: fit-content;
+}
 
 .cont_modo_juego img {
-    width: 80%;
-    
+    width: 80%;    
 }
 
 .rangos{
@@ -387,28 +385,35 @@ h5{
 }
 }
 
-@media (min-width: 10px) and (max-width: 726px){
+@media (min-width: 734px) and (max-width: 780px){
 
     .contenido_pagina{
         display: grid;
         justify-items: center;
 
     }
-
     .contenido_main{
         display: grid;
         justify-items: center;
     }
 
-
+   
+    .contenido_main p{
+        font-size: initial;
+    }
     .cont_rango{
         display: grid;
         justify-items: center;
     }
     
+    
     .cont_modo_juego img {
         width: 80%;
         
+    }
+
+    .imagen_bienvenida{
+        width: 80%;
     }
     
     .rangos{
@@ -417,3 +422,104 @@ h5{
     }
 }
 
+@media (min-width: 10px) and (max-width: 733px){
+    .justify-content-end a{
+        font-size: 60%;
+
+    }
+
+    .contendor_title_bienvenida{
+        width: 100%;
+        font-size: 70%;
+    }
+  
+    .modo_juego h1{
+        font-size: 200%;
+        margin-bottom: 5%;
+    }
+
+    #tittle_cont_modo_juego{
+        font-size: 170%;
+    }
+    .imagenes p{
+        font-size: 70%;
+        text-align: center;
+        margin: 9%;
+      }
+    
+    .contenido_pagina{
+        display: grid;
+        justify-items: center;
+
+    }
+    .contenido_main{
+        display: grid;
+        justify-items: center;
+    }
+
+    .contenido_main p{
+        font-size: initial;
+    }
+    .cont_rango{
+        display: grid;
+        justify-items: center;
+    }
+
+    .cont_rango p{
+        margin: 3%;
+        font-size: 63%;
+    }
+    
+    .cont_modo_juego img {
+        width: 80%;
+        
+    }
+
+    .imagen_bienvenida{
+        width: 80%;
+    }
+    
+    .rangos{
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    .rango{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        display: inline-flex;
+    }
+    .rango p{
+        font-size: 12px;
+        display: initial;
+        width: 30%;
+        margin: 0;
+    }
+
+    .leyendas p {
+        font-size: 65%;
+
+    }
+    .leyendas img {
+        height: 70%;
+    }
+
+    #img_grande{
+        height: 200px;
+    }
+
+    
+    .contenedor_personaje {
+        display: grid;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .contenedor_personaje a{
+        height: fit-content;
+    }
+        
+}
+    
+    
