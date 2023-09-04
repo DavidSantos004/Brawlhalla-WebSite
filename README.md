@@ -22,8 +22,8 @@ Nuestro sitio web está diseñado para proporcionarte toda la información que n
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1](./Cap_1.jpeg)
-![Captura de pantalla 2](./Cap_2.jpeg)
+![Captura de pantalla 1](./capturas%20pagina/Cap_1.jpeg)
+![Captura de pantalla 2](./capturas%20pagina/Cap_2.jpeg)
 
 ## Tecnologías Utilizadas
 
