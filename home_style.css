@@ -519,7 +519,11 @@ h5{
     .contenedor_personaje a{
         height: fit-content;
     }
-        
+    .container, .container-md, .container-sm {
+        max-width: 100%!important;
+    }
+    #logo_footer{
+        width: 50%;
+    }
+    
 }
-    
-    
